@@ -375,7 +375,9 @@ const RequestInfo: React.FC<RequestInfoProps> = ({ navigation }) => {
         [
           {
             text: 'Done',
-            onPress: () => navigation.goBack?.(),
+            onPress: () => navigation.navigate('AadhaarVerification', {
+              selectedFields: selectedFields,
+            }),
           },
         ],
       );
