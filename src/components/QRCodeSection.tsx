@@ -1,7 +1,7 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
-import { COLORS } from '../constants/theme';
+import { StyleSheet, Text, View } from 'react-native';
 import QRCode from 'react-native-qrcode-svg';
+import { THEME } from '../globals/theme';
 
 
 export const QRCodeSection: React.FC = () => {
@@ -29,7 +29,7 @@ export const QRCodeSection: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: COLORS.white,
+    backgroundColor: THEME.white,
     borderRadius: 18,
     padding: 16,
     flexDirection: 'row',
@@ -73,12 +73,12 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 14,
     fontWeight: '700',
-    color: COLORS.textDark,
+    color: THEME.textDark,
     marginBottom: 4,
   },
   instructions: {
     fontSize: 12,
-    color: COLORS.textMuted,
+    color: THEME.textMuted,
     lineHeight: 17,
   },
 });

@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { QRCodeSection } from './QRCodeSection';
-import { COLORS } from '../constants/theme';
+import { THEME } from '../globals/theme';
 
 // Enable LayoutAnimation for Android
 if (Platform.OS === 'android' && UIManager.setLayoutAnimationEnabledExperimental) {
@@ -64,7 +64,7 @@ export const AadhaarVerificationScreen: React.FC = () => {
           <Pressable
             style={({ pressed }) => [
               styles.primaryButton,
-              pressed && { backgroundColor: COLORS.primaryOrangePressed },
+              pressed && { backgroundColor: THEME.primaryOrangePressed },
             ]}
             onPress={handleRedirect}
           >
@@ -96,7 +96,7 @@ export const AadhaarVerificationScreen: React.FC = () => {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: COLORS.background,
+    backgroundColor: THEME.background,
   },
   header: {
     flexDirection: 'row',
@@ -114,13 +114,13 @@ const styles = StyleSheet.create({
   backChevron: {
     fontSize: 28,
     fontWeight: '700',
-    color: COLORS.primaryOrange,
+    color: THEME.primaryOrange,
     lineHeight: 30,
   },
   headerTitle: {
     fontSize: 20,
     fontWeight: '800',
-    color: COLORS.primaryOrange,
+    color: THEME.primaryOrange,
     letterSpacing: -0.2,
   },
   scrollContent: {
@@ -128,12 +128,12 @@ const styles = StyleSheet.create({
     flexGrow: 1,
   },
   card: {
-    backgroundColor: COLORS.cardBackground,
+    backgroundColor: THEME.cardBackground,
     borderRadius: 24,
     padding: 20,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: COLORS.borderLight,
+    borderColor: THEME.borderLight,
   },
   badgeContainer: {
     marginBottom: 16,
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
   badge: {
     width: 60,
     height: 60,
-    backgroundColor: COLORS.white,
+    backgroundColor: THEME.white,
     borderRadius: 18,
     justifyContent: 'center',
     alignItems: 'center',
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     width: 32,
     height: 22,
     borderWidth: 2,
-    borderColor: COLORS.primaryOrange,
+    borderColor: THEME.primaryOrange,
     borderRadius: 4,
     flexDirection: 'row',
     alignItems: 'center',
@@ -167,23 +167,23 @@ const styles = StyleSheet.create({
     height: 8,
     borderRadius: 4,
     borderWidth: 1.5,
-    borderColor: COLORS.primaryOrange,
+    borderColor: THEME.primaryOrange,
   },
   idCardLine: {
     width: 10,
     height: 2,
-    backgroundColor: COLORS.primaryOrange,
+    backgroundColor: THEME.primaryOrange,
   },
   cardTitle: {
     fontSize: 18,
     fontWeight: '800',
-    color: COLORS.textDark,
+    color: THEME.textDark,
     textAlign: 'center',
     marginBottom: 8,
   },
   cardSubtitle: {
     fontSize: 13,
-    color: COLORS.textMuted,
+    color: THEME.textMuted,
     textAlign: 'center',
     lineHeight: 18,
     paddingHorizontal: 12,
@@ -191,14 +191,14 @@ const styles = StyleSheet.create({
   },
   primaryButton: {
     width: '100%',
-    backgroundColor: COLORS.primaryOrange,
+    backgroundColor: THEME.primaryOrange,
     borderRadius: 14,
     paddingVertical: 14,
     alignItems: 'center',
     justifyContent: 'center',
   },
   primaryButtonText: {
-    color: COLORS.white,
+    color: THEME.white,
     fontSize: 16,
     fontWeight: '700',
   },
@@ -207,7 +207,7 @@ const styles = StyleSheet.create({
     paddingVertical: 4,
   },
   toggleText: {
-    color: COLORS.primaryOrange,
+    color: THEME.primaryOrange,
     fontSize: 14,
     fontWeight: '700',
     textDecorationLine: 'underline',
@@ -217,7 +217,7 @@ const styles = StyleSheet.create({
     marginTop: 24,
   },
   bottomPill: {
-    backgroundColor: COLORS.pillBackground,
+    backgroundColor: THEME.pillBackground,
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 20,
@@ -225,6 +225,6 @@ const styles = StyleSheet.create({
   bottomPillText: {
     fontSize: 12,
     fontWeight: '600',
-    color: COLORS.textMuted,
+    color: THEME.textMuted,
   },
 });

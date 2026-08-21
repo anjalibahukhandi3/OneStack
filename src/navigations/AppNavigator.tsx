@@ -14,6 +14,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const AppNavigator = () => {
   return (
+    <NavigationContainer>
       <Stack.Navigator
         id="RootStack"
         initialRouteName="Splash"
@@ -44,6 +45,7 @@ const AppNavigator = () => {
         component={KYCVerifiedScreen}
       />
       </Stack.Navigator>
+      </NavigationContainer>
   );
 };
 
