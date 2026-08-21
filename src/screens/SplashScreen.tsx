@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
-import type { RootStackParamList } from '../navigations/AppNavigator';
+import type { RootStackParamList } from '../navigations/types';
 
 type SplashScreenProps = NativeStackScreenProps<
   RootStackParamList,

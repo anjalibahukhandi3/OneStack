@@ -1,12 +1,17 @@
 export const THEME = {
+  background: '#FFFFFF',
+  cardBackground: '#FBF0E4',     // Warm peach/cream background
+  primaryOrange: '#CD631D',      // Main orange CTA and accent
+  primaryOrangePressed: '#B35314',
+  textDark: '#1E1E1E',
+  textMuted: '#6B7280',
+  textSecondary: '#4B5563',
+  white: '#FFFFFF',
+  pillBackground: '#F3F4F6',
   primary: '#DE7225',
   primaryLight: '#FCE8DA',
   primaryDark: '#C76325',
-  white: '#FFFFFF',
   black: '#111111',
-  textDark: '#1A1A1A',
-  textSecondary: '#666666',
-  textMuted: '#888888',
   border: '#E8E8E8',
   borderLight: '#F0F0F0',
   borderInput: '#E5E5E5',
